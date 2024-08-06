@@ -18,6 +18,7 @@
 
 body {
     font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--white);
 }
 
 .logo {
@@ -31,21 +32,25 @@ body {
 }
 
 h1 {
-    margin: 48px 24px;
+    margin: 48px auto;
     text-align: center;
     font-weight: 900;
     font-size: 40px;
 }
 
 .hero__para, .feature__para {
-    margin: 0 24px 32px;
+    margin: 0 auto 32px;
     text-align: center;
     font-weight: 300;
     color: var(--gray);
 }
 
+.button__container {
+    display: flex;
+    flex-direction: column;
+}
+
 button {
-    display: block;
     text-align: center;
     border-radius: 24px;
     padding: 16px 32px;
@@ -106,9 +111,11 @@ span {
     text-align: center;
     letter-spacing: 4px;
     font-weight: 900;
+    margin-bottom: 16px;
 }
 
 h2 {
+    margin: 0 auto 32px;
     text-align: center;
     font-weight: 900;
 }
@@ -155,7 +162,8 @@ h2 {
 
 .footer__btn {
     position: relative;
-    margin-bottom: 64px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: var(--secondary);
     z-index: 10;
 }
@@ -164,3 +172,51 @@ h2 {
     color: var(--secondaryHover);
 }
 
+@media (min-width: 768px) {
+    h1 {
+        max-width: 400px;
+        font-size: 48px;
+        text-align: center;
+    }
+    .hero__para, .feature__para {
+        max-width: 450px;
+    }
+   .button__container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+   }
+
+   .primary__btn {
+    margin-right: 16px;
+   }
+
+   .secondary__btn {
+    margin-left: 8px;
+   }
+   
+   .step__number {
+    width: 10%;
+   }
+
+   .img__group {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+
+   h2 {
+    font-size: 40px;
+    max-width: 445px;
+   }
+
+   .footer__heading {
+    font-size: 40px;
+   }
+
+   .footer__para {
+    max-width: 570px;
+   }
+
+   .footer__btn {
+   }
+
+}
