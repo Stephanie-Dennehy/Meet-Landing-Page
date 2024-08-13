@@ -73,6 +73,10 @@ span {
     background-color: var(--secondary);
 }
 
+.desktop {
+    display: none;
+}
+
 .vertical__line {
     border-left: 1px solid var(--gray);
     opacity: .3;
@@ -215,8 +219,28 @@ h2 {
    .footer__para {
     max-width: 570px;
    }
+}
 
-   .footer__btn {
+@media (min-width: 1440px) {
+
+   .desktop__wrapper {
+    display: flex;
+    justify-content: space-between;
    }
 
+   .step__number {
+    width: 5%;
+   }
+
+    .hero__img {
+        display: none;
+    }   
+
+    .hero__left {
+        margin-left: -35px;
+    }
+
+    .hero__right {
+        margin-right: -35px;
+    }
 }
