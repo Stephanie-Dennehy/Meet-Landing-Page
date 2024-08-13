@@ -29,6 +29,15 @@ body {
 .hero__img {
     width: 100%;
     margin-top: 8px;
+    max-width: 100%;
+}
+
+.hero__left {
+    display: none;
+}
+
+.hero__right {
+    display: none;
 }
 
 h1 {
@@ -87,10 +96,6 @@ span {
     background-color: var(--secondary);
 }
 
-.desktop {
-    display: none;
-}
-
 .vertical__line {
     border-left: 1px solid var(--gray);
     opacity: .3;
@@ -145,7 +150,7 @@ h2 {
 }
 
 .footer {
-    background: url('/assets/mobile/image-footer.jpg') no-repeat center center/cover;
+    background: url('./assets/mobile/image-footer.jpg') no-repeat center center/cover;
     position: relative;
     width: 100%;
     padding: 92px 24px 72px;
@@ -236,7 +241,6 @@ h2 {
 }
 
 @media (min-width: 1440px) {
-
    .desktop__wrapper {
     display: flex;
     justify-content: space-between;
@@ -256,5 +260,9 @@ h2 {
 
     .hero__right {
         margin-right: -35px;
+    }
+
+    .footer {
+        background-image: url('./assets/desktop/image-footer.jpg');
     }
 }
