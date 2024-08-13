@@ -239,7 +239,7 @@ h2 {
    .footer {
     background-image: url('./assets/tablet/image-footer.jpg');
    }
-   
+
    .footer__heading {
     font-size: 40px;
    }
@@ -276,5 +276,24 @@ h2 {
     .footer {
         background-image: url('./assets/desktop/image-footer.jpg');
         position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .footer__btn {
+       left: 0;
+    }
+
+    .footer__heading, 
+    .footer__para {
+        text-align: left;
+    }
+
+    .footer__para {
+        max-width: 350px;
+        margin-left: -30px;
     }
 }
