@@ -266,5 +266,6 @@ h2 {
 
     .footer {
         background-image: url('./assets/desktop/image-footer.jpg');
+        position: relative;
     }
 }
