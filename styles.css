@@ -65,6 +65,20 @@ button {
     background-color: var(--primary);
 }
 
+.primary__btn:hover, 
+.secondary__btn:hover {
+    cursor: pointer;
+}
+
+.primary__btn:hover {
+    background-color: hsla(192, 90%, 77%, .5);
+}
+
+.secondary__btn:hover, 
+.footer__btn:hover {
+    background-color: hsla(268, 100%, 86%, .6);
+}
+
 span {
     color: var(--primaryHover);
 }
