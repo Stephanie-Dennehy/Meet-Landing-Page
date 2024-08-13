@@ -201,6 +201,11 @@ h2 {
         font-size: 48px;
         text-align: center;
     }
+
+    .hero__left, 
+    .hero__right {
+        display: none;
+    }
     .hero__para, .feature__para {
         max-width: 450px;
     }
@@ -231,6 +236,10 @@ h2 {
     max-width: 445px;
    }
 
+   .footer {
+    background-image: url('./assets/tablet/image-footer.jpg');
+   }
+   
    .footer__heading {
     font-size: 40px;
    }
